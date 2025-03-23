@@ -1,0 +1,7 @@
+{
+	"name": "AzureDataLakeStorage840",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/53eb7a05-4994-47b6-989e-5ec45ed3b5d6/resourceGroups/New_nchavala/providers/Microsoft.Storage/storageAccounts/blobstorage6793",
+		"groupId": "dfs"
+	}
+}
