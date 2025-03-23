@@ -8,6 +8,7 @@
 			"database": "database475",
 			"encrypt": "optional",
 			"trustServerCertificate": false,
+			"hostNameInCertificate": "sql-practise6793.database.windows.net",
 			"authenticationType": "SystemAssignedManagedIdentity"
 		},
 		"connectVia": {
