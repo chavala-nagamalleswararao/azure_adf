@@ -57,7 +57,7 @@
 		"typeProperties": {
 			"schema": "SalesLT",
 			"table": {
-				"value": "@dataset().tbl_name",
+				"value": "Address",
 				"type": "Expression"
 			}
 		}
