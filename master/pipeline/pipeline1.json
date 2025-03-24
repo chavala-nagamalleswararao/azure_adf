@@ -37,7 +37,12 @@
 						"type": "ParquetSink",
 						"storeSettings": {
 							"type": "AzureBlobFSWriteSettings",
-							"maxConcurrentConnections": 2
+							"maxConcurrentConnections": 2,
+							"metadata": [
+								{
+									"value": ""
+								}
+							]
 						},
 						"formatSettings": {
 							"type": "ParquetWriteSettings"
@@ -46,6 +51,138 @@
 					"enableStaging": false,
 					"translator": {
 						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "AddressID",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"name": "AddressID",
+									"type": "Int32",
+									"physicalType": "INT_32"
+								}
+							},
+							{
+								"source": {
+									"name": "AddressLine1",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "AddressLine1",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "AddressLine2",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "AddressLine2",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "CountryRegion",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "City",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "StateProvince",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "StateProvince",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "CountryRegion",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "CountryRegion",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "PostalCode",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "PostalCode",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "rowguid",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "rowguid",
+									"type": "Guid",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "ModifiedDate",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								},
+								"sink": {
+									"name": "ModifiedDate",
+									"type": "DateTime",
+									"physicalType": "INT_96"
+								}
+							},
+							{
+								"source": {
+									"name": "crnt_timestamp",
+									"type": "String"
+								},
+								"sink": {
+									"name": "crnt_timestamp",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "Additional",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Additional",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							}
+						],
 						"typeConversion": true,
 						"typeConversionSettings": {
 							"allowDataTruncation": true,
