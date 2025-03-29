@@ -1,0 +1,15 @@
+{
+	"name": "nagpracticeadf",
+	"location": "westus",
+	"identity": {
+		"type": "SystemAssigned,UserAssigned",
+		"principalId": "eec4589f-1a9c-4096-a806-59999909b2b6",
+		"tenantId": "43431bcb-3607-4b46-a9b2-8a680c27b4a9",
+		"userAssignedIdentities": {
+			"/subscriptions/033abc13-dedd-445d-8f7f-555b73cb8d55/resourcegroups/practice_resource/providers/Microsoft.ManagedIdentity/userAssignedIdentities/managedidentity": {
+				"clientId": "39e6328f-5af7-4607-a821-2cd918b924f1",
+				"principalId": "e3af00a8-c56e-4e1a-8f81-f8dd23cab3e9"
+			}
+		}
+	}
+}
