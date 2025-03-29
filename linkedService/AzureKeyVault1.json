@@ -4,11 +4,7 @@
 		"annotations": [],
 		"type": "AzureKeyVault",
 		"typeProperties": {
-			"baseUrl": "https://nagakey.vault.azure.net/",
-			"credential": {
-				"referenceName": "credential",
-				"type": "CredentialReference"
-			}
+			"baseUrl": "https://nagakey.vault.azure.net/"
 		}
 	}
 }
