@@ -1,0 +1,6 @@
+Employee_ID,Name,Age,Department,Salary,Joining_Date,City
+101,Alice Johnson,29,HR,60000,6/12/2018,New York
+102,Bob Smith,35,Finance,75000,9/23/2015,San Francisco
+103,Charlie Brown,42,IT,85000,7/19/2012,Chicago
+104,David Wilson,31,Marketing,65000,3/4/2019,Los Angeles
+105,Eva Davis,26,Sales,55000,11/29/2021,Boston
