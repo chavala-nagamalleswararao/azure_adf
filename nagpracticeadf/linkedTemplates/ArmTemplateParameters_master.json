@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "nagpracticeadf"
+		},
+		"AzureDataLakeStorage_accountKey": {
+			"value": ""
+		},
+		"azuregen2_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage_properties_typeProperties_url": {
+			"value": "https://nagagen2.dfs.core.windows.net/"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://nagakey.vault.azure.net/"
+		},
+		"azuregen2_properties_typeProperties_url": {
+			"value": "https://nagagen2.dfs.core.windows.net/"
+		},
+		"nagakey_properties_typeProperties_baseUrl": {
+			"value": "https://nagakey.vault.azure.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
