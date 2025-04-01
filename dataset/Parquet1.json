@@ -3,7 +3,10 @@
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage",
-			"type": "LinkedServiceReference"
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"concat": "@concat('data_', formatDateTime(utcnow(), 'yyyyMMdd'), '.parquet')"
+			}
 		},
 		"annotations": [],
 		"type": "Parquet",
