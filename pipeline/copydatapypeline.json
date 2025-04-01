@@ -24,6 +24,10 @@
 								"value": "*.parquet",
 								"type": "Expression"
 							},
+							"wildcardFileName": {
+								"value": "{\n    \"name\": \"Parquet1\",\n    \"properties\": {\n        \"type\": \"AzureBlobFS\",\n        \"linkedServiceName\": {\n            \"referenceName\": \"AzureDataLakeStorage\",\n            \"type\": \"LinkedServiceReference\"\n        },\n        \"typeProperties\": {\n            \"location\": {\n                \"type\": \"AzureBlobFSLocation\",\n                \"folderPath\": \"raw-data/parquet-folder/\"\n            },\n            \"fileName\": \"*.parquet\",\n            \"format\": {\n                \"type\": \"ParquetFormat\"\n            }\n        }\n    }\n}\n",
+								"type": "Expression"
+							},
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
