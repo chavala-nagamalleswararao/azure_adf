@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": "Sample_Employee_Data.csv",
 				"fileSystem": "practicegen2"
 			},
 			"compressionCodec": "snappy"
