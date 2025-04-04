@@ -60,14 +60,6 @@
 								"storeSettings": {
 									"type": "AzureBlobFSReadSettings",
 									"recursive": true,
-									"wildcardFolderPath": {
-										"value": "*.parquet",
-										"type": "Expression"
-									},
-									"wildcardFileName": {
-										"value": "{\n    \"name\": \"Parquet1\",\n    \"properties\": {\n        \"type\": \"AzureBlobFS\",\n        \"linkedServiceName\": {\n            \"referenceName\": \"AzureDataLakeStorage\",\n            \"type\": \"LinkedServiceReference\"\n        },\n        \"typeProperties\": {\n            \"location\": {\n                \"type\": \"AzureBlobFSLocation\",\n                \"folderPath\": \"raw-data/parquet-folder/\"\n            },\n            \"fileName\": \"*.parquet\",\n            \"format\": {\n                \"type\": \"ParquetFormat\"\n            }\n        }\n    }\n}\n",
-										"type": "Expression"
-									},
 									"enablePartitionDiscovery": false
 								},
 								"formatSettings": {
@@ -136,7 +128,9 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
-						"fileSystem": "practicegen2"
+						"fileName": "copydatapypeline.json",
+						"folderPath": "pipeline",
+						"fileSystem": "azure_adf"
 					},
 					"compressionCodec": "snappy"
 				},
@@ -159,7 +153,9 @@
 				"type": "Parquet",
 				"typeProperties": {
 					"location": {
-						"type": "AzureBlobFSLocation"
+						"type": "AzureBlobFSLocation",
+						"fileName": "Sample_Employee_Data.csv",
+						"fileSystem": "practicegen2"
 					},
 					"compressionCodec": "snappy"
 				},
