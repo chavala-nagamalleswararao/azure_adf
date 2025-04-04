@@ -128,9 +128,9 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
-						"fileName": "copydatapypeline.json",
-						"folderPath": "pipeline",
-						"fileSystem": "azure_adf"
+						"fileName": "Sample_Employee_Data.csv",
+						"folderPath": "azure_adf",
+						"fileSystem": "azure_sprint_story"
 					},
 					"compressionCodec": "snappy"
 				},
@@ -154,8 +154,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
-						"fileName": "Sample_Employee_Data.csv",
-						"fileSystem": "practicegen2"
+						"fileName": "Sample_Employee_Data.csv"
 					},
 					"compressionCodec": "snappy"
 				},
