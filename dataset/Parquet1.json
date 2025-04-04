@@ -3,19 +3,14 @@
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage",
-			"type": "LinkedServiceReference",
-			"parameters": {
-				"concat": "@concat('data_', formatDateTime(utcnow(), 'yyyyMMdd'), '.parquet')"
-			}
+			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "Parquet",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "Sample_Employee_Data.csv",
-				"folderPath": "azure_adf",
-				"fileSystem": "azure_sprint_story"
+				"fileSystem": "storageprivate"
 			},
 			"compressionCodec": "snappy"
 		},
