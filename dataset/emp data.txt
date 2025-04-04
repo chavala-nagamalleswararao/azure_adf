@@ -1,0 +1,7 @@
+EmpID,FirstName,LastName,Department,Salary,JoiningDate
+101,John,Doe,IT,70000,2020-01-15
+102,Jane,Smith,Finance,75000,2019-03-22
+103,Robert,Brown,HR,65000,2021-07-01
+104,Linda,Johnson,Marketing,72000,2018-11-05
+105,Michael,Lee,IT,78000,2022-06-10
+106,Emily,Clark,Finance,73000,2020-10-20
