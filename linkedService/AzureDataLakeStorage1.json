@@ -9,6 +9,10 @@
 				"referenceName": "credential",
 				"type": "CredentialReference"
 			}
+		},
+		"connectVia": {
+			"referenceName": "SHIR",
+			"type": "IntegrationRuntimeReference"
 		}
 	}
 }
