@@ -5,7 +5,7 @@
 		"type": "AzureBlobStorage",
 		"typeProperties": {
 			"serviceEndpoint": "https://nagablob.blob.core.windows.net/",
-			"accountKind": "StorageV2",
+			"accountKind": "BlobStorage",
 			"credential": {
 				"referenceName": "credential",
 				"type": "CredentialReference"
